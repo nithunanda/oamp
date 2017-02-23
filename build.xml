@@ -43,6 +43,7 @@
 		<tstamp />
 		<!-- Create the build directory structure used by compile -->
 		<mkdir dir="${build.dir}" />
+		<mkdir dir="${report.dir}" />
 	</target>
 
 	<target name="compile" depends="init">
@@ -90,6 +91,7 @@
 	<target name="clean" description="clean up">
 		<delete dir="${build.dir}" />
 		<delete dir="${dist.dir}" />
+		<delete dir="${report.dir}" />
 	</target>
 
 	<!-- Default, run this -->

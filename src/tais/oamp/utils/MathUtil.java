@@ -2,7 +2,7 @@ package tais.oamp.utils;
 
 public class MathUtil {
 	
-	statc public int add(int a, int b) {
+	static public int add(int a, int b) {
 		return a + b;
 	}
 	
