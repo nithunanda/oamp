@@ -1,7 +1,7 @@
 <project name="AntJavaProject" default="main" basedir=".">
     
 	<description>
-		Sample Ant build script 123
+		Sample Ant build script
 	</description>
 
 	<property name="projectName" value="MathUtil" />
