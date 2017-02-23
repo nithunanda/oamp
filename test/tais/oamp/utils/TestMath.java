@@ -24,7 +24,7 @@ public class TestMath extends TestCase{
 	  public void testMulitply() {
 	  	int num1 = 3; 
 	  	int num2 = 7; 
-	  	int total = 21;
+	  	int total = 20;
 	  	int sum = 0;
 	  	sum = MathUtil.multiply(num1, num2);
 	  	assertEquals("Problem with multiply", sum, total);
