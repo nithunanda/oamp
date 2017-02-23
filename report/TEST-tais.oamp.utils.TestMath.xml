@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Teonsite05" name="tais.oamp.utils.TestMath" skipped="0" tests="2" time="0.051" timestamp="2017-02-23T18:06:07">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 8.1" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_51\jre\classes" />
+    <property name="TODAY" value="February 23 2017" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\Program Files\apache-ant-1.9.6" />
+    <property name="java.runtime.version" value="1.8.0_51-b16" />
+    <property name="user.name" value="nithp" />
+    <property name="build.dir" value="E:\Nithi\MMS_Workspace\oamp\bin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.project.name" value="AntJavaProject" />
+    <property name="DSTAMP" value="20170223" />
+    <property name="java.version" value="1.8.0_51" />
+    <property name="user.timezone" value="America/Los_Angeles" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ant.file.AntJavaProject" value="E:\Nithi\MMS_Workspace\oamp\build.xml" />
+    <property name="projectName" value="MathUtil" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="ant.file.type.AntJavaProject" value="file" />
+    <property name="user.country" value="IN" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_51\jre" />
+    <property name="dist.dir" value="E:\Nithi\MMS_Workspace\oamp\dist" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="E:\Nithi\MMS_Workspace\oamp\build.xml" />
+    <property name="os.version" value="6.3" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.51-b03" />
+    <property name="report.dir" value="E:\Nithi\MMS_Workspace\oamp\report" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\Program Files\apache-ant-1.9.6\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\nithp" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="E:\Nithi\MMS_Workspace\oamp\test" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\ProgramData\Lenovo\ReadyApps;C:\Program Files\Java\jdk1.8.0_51\bin;.;C:\Program Files\TortoiseSVN\bin;C:\Program Files\apache-maven\bin;.;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\OpenSSL-Win32\bin;.;C:\Program Files\apache-ant-1.9.6\bin;.;C:\Program Files\Git\cmd;.;C:\Program Files\Git\bin;.;C:\Program Files (x86)\Git\libexec\git-core;.;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner tais.oamp.utils.TestMath skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\Nithi\MMS_Workspace\oamp\report\TEST-tais.oamp.utils.TestMath.xml crashfile=E:\Nithi\MMS_Workspace\oamp\junitvmwatcher5885718146262982449.properties propsfile=E:\Nithi\MMS_Workspace\oamp\junit1549608230709583779.properties" />
+    <property name="java.class.path" value="E:\Nithi\MMS_Workspace\oamp\src;E:\Nithi\MMS_Workspace\oamp\lib\junit-4.10.jar;E:\Nithi\MMS_Workspace\oamp\bin;C:\Program Files\apache-ant-1.9.6\lib\ant-launcher.jar;C:\Program Files\apache-ant-1.9.6\lib\ant.jar;C:\Program Files\apache-ant-1.9.6\lib\ant-junit.jar;C:\Program Files\apache-ant-1.9.6\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="TSTAMP" value="1006" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.io.tmpdir" value="C:\Users\nithp\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\ext;C:\windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\Nithi\MMS_Workspace\oamp" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="E:\Nithi\MMS_Workspace\oamp" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="C:\Program Files\apache-ant-1.9.6\lib\ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="E:\Nithi\MMS_Workspace\oamp\src" />
+    <property name="ant.project.invoked-targets" value="main" />
+  </properties>
+  <testcase classname="tais.oamp.utils.TestMath" name="testMulitply" time="0.001" />
+  <testcase classname="tais.oamp.utils.TestMath" name="testAdd" time="0.003" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

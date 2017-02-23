@@ -1,0 +1,98 @@
+<project name="AntJavaProject" default="main" basedir=".">
+    
+	<description>
+		Create a Java Project (JAR) with Ant build script
+	</description>
+
+	<property name="projectName" value="MathUtil" />
+
+	<!-- Java sources -->
+	<property name="src.dir" location="src/" />	
+	<property name="test.dir" location="test/" />
+	
+	<!-- Library -->
+	<property name="lib.dir" location="lib/" />
+	
+	<!--  Reporting -->
+	<property name="report.dir" location="report/" />
+
+	<!-- Java classes -->
+	<property name="build.dir" location="bin/" />
+
+	<!-- Output, Jar -->
+	<property name="dist.dir" location="dist/" />	
+	
+	<path id="src.path">
+	    <pathelement path="${src.dir}"/>
+	</path>
+	
+	<path id ="compile.path">
+	    <path refid = "src.path"/>
+	    <fileset dir="${lib.dir}">
+        	<include name="**/*.jar"/>
+    	</fileset>
+	</path>
+	
+	<path id="unit.test.path">
+    	<path refid="compile.path"/>
+    	<pathelement path="${build.dir}"/>
+	</path>
+	
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<target name="compile" depends="init">
+    	<javac includeantruntime="false" destdir="${build.dir}">
+        	<src path="${src.dir}"/>
+        	<classpath refid="compile.path"/>
+    	</javac>
+	</target>
+
+	<target name="compileUnitTests" depends="compile">
+    	<javac includeantruntime="false" srcdir="${test.dir}" destdir="${build.dir}">
+        	<classpath refid="unit.test.path"/>
+    	</javac>
+	</target>
+	
+	<target name="runUnitTests" depends="compileUnitTests">
+    	<junit printsummary="yes" haltonfailure="no">
+    	<jvmarg value="-Dfile.encoding=UTF-8"/>
+        	<classpath refid="unit.test.path"/>
+
+        	<formatter type="xml"/>
+
+        	<batchtest fork="yes" todir="${report.dir}">
+            	<fileset dir="${test.dir}">
+                	<include name="**/*Test*.java" /> 
+            	</fileset>
+        	</batchtest>
+    	</junit>
+	</target>
+	
+	<target name="dist" depends="runUnitTests" description="package, output to JAR">
+
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist.dir}" />
+
+		<!-- Put everything in ${build} into the {$projectName}-${DSTAMP}.jar file -->
+		<jar jarfile="${dist.dir}/${projectName}-${DSTAMP}.jar" basedir="${build.dir}" >
+		    <manifest>
+			<!-- create an executable Jar -->
+			<attribute name="Main-Class" value="tais.oamp.utils.MathUtil" />
+		    </manifest>
+		</jar>
+	</target>	
+
+	<target name="clean" description="clean up">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+
+	<!-- Default, run this -->
+	<target name="main" depends="clean, compile, compileUnitTests, runUnitTests, dist" />
+
+</project>
